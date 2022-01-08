@@ -11,6 +11,8 @@
 }
 .list {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 .link {
   text-decoration: none;
@@ -59,6 +61,12 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-container {
+  display: flex;
+}
+.nav-section {
+  display: flex;
+}
 
 .header-link-logo {
   font-family: 'Raleway', sans-serif;
@@ -66,9 +74,13 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-color);
+  margin-right: 93px;
 }
 .logo {
   color: var(--alt-color);
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .link-nav-studio,
@@ -78,7 +90,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.header-link-contacts {
+  margin-left: auto;
+}
+.header-link-tel {
+  margin-left: 50px;
+}
 .header-link-mail,
 .header-link-tel {
   font-weight: 500;
@@ -95,6 +112,12 @@ body {
   padding-bottom: 200px;
   margin-bottom: 94px;
 }
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px, 32px;
+}
 .main-section-hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -104,10 +127,12 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 30px;
+  max-width: 696px;
 }
 .main-section-hero-button-container {
   width: 200px;
   height: 50px;
+  justify-content: center;
 }
 
 .main-section-hero-button {
