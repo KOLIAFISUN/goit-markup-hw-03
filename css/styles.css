@@ -11,8 +11,6 @@
 }
 .list {
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 .link {
   text-decoration: none;
@@ -67,7 +65,14 @@ body {
 .nav-section {
   display: flex;
 }
-
+.link-nav {
+  display: flex;
+  align-items: center;
+}
+.header-link-contacts {
+  display: flex;
+  align-items: center;
+}
 .header-link-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -116,7 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px, 32px;
+  padding: 200px 0;
 }
 .main-section-hero-title {
   font-weight: 900;
@@ -129,13 +134,14 @@ body {
   margin-bottom: 30px;
   max-width: 696px;
 }
-.main-section-hero-button-container {
+.hero-button-container {
   width: 200px;
   height: 50px;
+  display: flex;
   justify-content: center;
 }
 
-.main-section-hero-button {
+.hero-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -157,6 +163,16 @@ body {
 .main-section-with-us {
   margin-bottom: 94px;
 }
+.container-with-us {
+  display: flex;
+  width: 1170px;
+}
+.with-us-item {
+  width: 270px;
+}
+.with-us-item:not(:last-child) {
+  margin-right: 30px;
+}
 .with-us-title {
   font-weight: 700;
   line-height: 1.14;
@@ -173,6 +189,17 @@ body {
 
 .what-are-we-doing {
   margin-bottom: 94px;
+}
+.what-are-we-doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.what-are-we-doing-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .what-are-we-doing-title {
   font-weight: 700;
@@ -195,6 +222,17 @@ body {
   text-align: center;
   color: var(--main-color);
   margin-bottom: 50px;
+}
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.our-team-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 120px) / 4);
 }
 .our-team-img {
   margin-bottom: 30px;
@@ -255,8 +293,24 @@ body {
   color: var(--white-color);
 }
 /* ========================== portfolio ==================== */
-.main-section-portfolio-buttons-list {
-  background-color: #f5f4fa;
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-work-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .button-all {
   font-family: inherit;
@@ -281,6 +335,7 @@ body {
   text-align: center;
   cursor: pointer;
   color: var(--main-color);
+  border-style: none;
 }
 .button:hover,
 .button:focus {
