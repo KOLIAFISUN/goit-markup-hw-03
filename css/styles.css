@@ -275,6 +275,10 @@ body {
   color: var(--white-color);
   margin-bottom: 9px;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 .footer-section-address-mail {
   line-height: 1.71;
   color: var(--rgba-color);
@@ -292,25 +296,36 @@ body {
 .footer-section-address-tel:focus {
   color: var(--white-color);
 }
+
 /* ========================== portfolio ==================== */
+.main-section-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .portfolio-buttons-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
+  padding: inherit;
 }
 
 .portfolio-buttons-item:not(:last-child) {
   margin-right: 8px;
 }
+/* почему ul portfolio не унаследовал падинг?
+я неделю разобраться не мог почему сетка в два ряда идёт ): */
 .portfolio-works-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
+  border: #000000;
+  padding: inherit;
 }
 .portfolio-work-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100% - 90px) / 3);
 }
 .button-all {
   font-family: inherit;
@@ -321,6 +336,9 @@ body {
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--alt-color);
+  border-radius: 10%;
+  min-width: 73px;
+  min-height: 38px;
 }
 .button-all:hover,
 .button-all:focus {
@@ -341,7 +359,22 @@ body {
 .button:focus {
   color: var(--alt-color);
 }
-
+.button-website {
+  min-width: 128px;
+  min-height: 38px;
+}
+.button-Applications {
+  min-width: 145px;
+  min-height: 38px;
+}
+.button-design {
+  min-width: 103px;
+  min-height: 38px;
+}
+.button-marketing {
+  min-width: 130px;
+  min-height: 38px;
+}
 .portfolio-work-title {
   font-weight: 700;
   font-size: 18px;
