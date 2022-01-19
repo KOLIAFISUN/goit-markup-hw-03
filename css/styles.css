@@ -132,8 +132,6 @@ body {
   max-width: 696px;
 }
 .hero-button-container {
-  width: 200px;
-  height: 50px;
   display: flex;
   justify-content: center;
 }
@@ -148,6 +146,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--alt-color);
+  width: 200px;
+  height: 50px;
 }
 .main-section-hero-button:hover,
 .main-section-hero-button:focus {
